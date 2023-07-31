@@ -129,9 +129,52 @@ img {
  ************************************************/
 
 
-@media screen and (max-width: 768px){
-    .container {
-        width: fit-content;
+@media screen and (max-width: 768px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .steps .col {
+        width: 50%;
     }
     
  }
+ 
+@media screen and (max-width: 480px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lessons  .col {
+        width: 90%;
+        padding-bottom: 30px;
+    }
+
+    .card {
+        padding-bottom: 30px;
+    }
+
+    .steps .col {
+        width: 90%;
+    }
+
+    .why-us .col-left {
+        width: 90%;
+    }
+ }
+ 
